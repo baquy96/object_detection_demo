@@ -1,0 +1,104 @@
+item {
+  id: 1
+  name: 'dot'
+}
+
+item {
+  id: 2
+  name: 'key-signature-1-#'
+}
+
+item {
+  id: 3
+  name: 'note-quarter-up'
+}
+
+item {
+  id: 4
+  name: 'note-half-up'
+}
+
+item {
+  id: 5
+  name: 'time-signature-3-4'
+}
+
+item {
+  id: 6
+  name: 'bar-sing'
+}
+
+item {
+  id: 7
+  name: 'note-quarter-down'
+}
+
+item {
+  id: 8
+  name: 'beam-2-eighth-notes-up'
+}
+
+item {
+  id: 9
+  name: 'beam-2-eighth-notes-down'
+}
+
+item {
+  id: 10
+  name: 'bar-double'
+}
+
+item {
+  id: 11
+  name: 'rest-quarter'
+}
+
+item {
+  id: 12
+  name: 'note-half-down'
+}
+
+item {
+  id: 13
+  name: 'note-eighth-down'
+}
+
+item {
+  id: 14
+  name: 'key-signature-2-#'
+}
+
+item {
+  id: 15
+  name: 'clef-treble'
+}
+
+item {
+  id: 16
+  name: 'note-eighth-up'
+}
+
+item {
+  id: 17
+  name: 'rnote-half-up-with-dot'
+}
+
+item {
+  id: 18
+  name: 'tie'
+}
+
+item {
+  id: 19
+  name: 'time-signature-4-4'
+}
+
+item {
+  id: 20
+  name: 'note-quarter-up-with-dot'
+}
+
+item {
+  id: 21
+  name: 'note-whole'
+}
