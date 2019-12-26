@@ -26,11 +26,21 @@ def xml_to_csv(path):
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Sample TensorFlow XML-to-CSV converter"
+    )
+    parser.add_argument(
+        "-o", "--outputFile", help="Name of output .csv file (including path)", type=str
+    )
+    parser.add_argument(
+        "-i",
+        "--inputDir",
+        help="Path to the folder where the input .xml files are stored",
+        type=str,
+    )
+    args = parser.parse_args()
     for folder in ['train','test']:
-        image_path = os.path.join(os.getcwd(), ('images/' + folder))
-        xml_df = xml_to_csv(image_path)
-        xml_df.to_csv(('images/' + folder + '_labels.csv'), index=None)
+        xml_df = xml_to_csv(args.inputDir)
+        xml_df.to_csv((args.outputFile + '_labels.csv'), index=None)
         print('Successfully converted xml to csv.')
-
-
 main()
