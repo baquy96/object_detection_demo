@@ -39,8 +39,7 @@ def main():
         type=str,
     )
     args = parser.parse_args()
-    for folder in ['train','test']:
-        xml_df = xml_to_csv(args.inputDir)
-        xml_df.to_csv((args.outputFile + '_labels.csv'), index=None)
-        print('Successfully converted xml to csv.')
+    xml_df = xml_to_csv(args.inputDir)
+    xml_df.to_csv((args.outputFile), index=None)
+    print('Successfully converted xml to csv.')
 main()
