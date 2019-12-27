@@ -1,7 +1,7 @@
 <annotation>
-	<folder>Desktop</folder>
+	<folder>train</folder>
 	<filename>1.jpg</filename>
-	<path>/Users/mac/Desktop/object_detection_demo/data/images/train/1.jpg</path>
+	<path>/Users/mac/Desktop/images/train/1.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -573,6 +573,18 @@
 			<ymin>519</ymin>
 			<xmax>631</xmax>
 			<ymax>550</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>rest</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>394</xmin>
+			<ymin>189</ymin>
+			<xmax>425</xmax>
+			<ymax>208</ymax>
 		</bndbox>
 	</object>
 </annotation>
