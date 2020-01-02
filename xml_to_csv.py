@@ -34,7 +34,7 @@ def xml_to_csv(path):
         for member in root.findall("object"):
             classes_names.append(member[0].text)
             value = (
-                root.find("filename").text,
+                root.find("filename").text.split('.')[0] + '.png',
                 float(root.find("size")[0].text),
                 float(root.find("size")[1].text),
                 member[0].text,
