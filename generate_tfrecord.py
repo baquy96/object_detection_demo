@@ -69,10 +69,10 @@ def create_tf_example(group, path, label_map):
     for index, row in group.object.iterrows():
         class_index = label_map.get(row["class"])
         if class_index is not None:
-            xmins.append(row["xmin"] / width)
-            xmaxs.append(row["xmax"] / width)
-            ymins.append(row["ymin"] / height)
-            ymaxs.append(row["ymax"] / height)
+            xmins.append(row["xmin"])
+            xmaxs.append(row["xmax"])
+            ymins.append(row["ymin"])
+            ymaxs.append(row["ymax"])
             classes_text.append(row["class"].encode("utf8"))
             classes.append(class_index)
 

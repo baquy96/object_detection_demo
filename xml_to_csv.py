@@ -33,17 +33,17 @@ def xml_to_csv(path):
         root = tree.getroot()
         for member in root.findall("object"):
             classes_names.append(member[0].text)
-            width = float(root.find("size")[0].text)
-            height = float(root.find("size")[1].text)
+            width = root.find("size")[0].text
+            height = root.find("size")[1].text
             value = (
                 root.find("filename").text.split('.')[0] + '.png',
-                width,
-                height,
+                float(root.find("size")[0].text),
+                float(root.find("size")[1].text),
                 member[0].text,
-                float(member[1][0].text) * width,
-                float(member[1][2].text) * height,
-                float(member[1][1].text) * width,
-                float(member[1][3].text) * height,
+                float(member[1][0].text),
+                float(member[1][2].text),
+                float(member[1][1].text),
+                float(member[1][3].text),
             )
             xml_list.append(value)
     column_name = [
